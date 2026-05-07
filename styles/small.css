@@ -44,7 +44,10 @@ header {
 
 #menu {
     border: 1px solid var(--border-color);
+
     background-color: var(--accent-color);
+
+    color: var(--text-color);
 
     padding: 0.5rem 0.8rem;
 
@@ -60,8 +63,10 @@ header {
 #menu.open::before {
     content: "✖";
 }
+
 nav {
     display: none;
+
     flex-direction: column;
 
     background-color: var(--primary-color);
@@ -78,23 +83,27 @@ nav a {
 
     padding: 1rem;
 
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
 
     font-weight: 700;
 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
 }
 
 nav a:hover {
     background-color: var(--secondary-color);
+    color: white;
 }
 
 nav a.active {
     background-color: black;
+    color: white;
 }
 
 main {
     max-width: 1200px;
+
     margin: 0 auto;
 
     padding: 1rem;
@@ -144,6 +153,7 @@ section p {
 
 .buttons {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
     gap: 0.5rem;
@@ -173,6 +183,7 @@ section p {
 
 #courses {
     display: grid;
+
     gap: 0.75rem;
 
     padding: 1rem;
@@ -212,11 +223,14 @@ footer {
 
 .social {
     display: flex;
+
     justify-content: center;
+
     gap: 1rem;
 
     margin-bottom: 1rem;
 }
+
 .social img {
     width: 40px;
     height: 40px;
