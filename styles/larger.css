@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        flex: 1;
+
+        text-align: center;
+
+        border: none;
+    }
+
+    .main-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #courses {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
