@@ -1,0 +1,26 @@
+{
+  "family_name": "Hinojosa",
+  "move_in_date": "2024-12-27",
+  "number_of_people": 3,
+  "visited_by_bishopric": true,
+
+  "family_members": [
+    {
+      "name": "Pablo Hinojosa",
+      "gender": "Male",
+      "birthdate": "1990-11-25"
+    },
+
+    {
+      "name": "Leah Hinojosa",
+      "gender": "Female",
+      "birthdate": "1989-12-21"
+    },
+
+    {
+      "name": "Nathan Blake Hinojosa",
+      "gender": "Male",
+      "birthdate": "2025-10-29"
+    }
+  ]
+}
