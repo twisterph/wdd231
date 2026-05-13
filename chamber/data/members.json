@@ -1,0 +1,73 @@
+{
+  "members": [
+    {
+      "name": "Keva Juice",
+      "address": "560 Lake Havasu Ave, Lake Havasu City, AZ",
+      "phone": "(928) 555-1044",
+      "website": "https://www.kevajuice.com",
+      "image": "keva-juice.webp",
+      "membership": 3,
+      "description": "Smoothies, juices, and healthy drinks for the local community."
+    },
+
+    {
+      "name": "Desert Tech Solutions",
+      "address": "210 Mesquite Ave, Lake Havasu City, AZ",
+      "phone": "(928) 555-2011",
+      "website": "https://www.deserttech.com",
+      "image": "desert-tech.webp",
+      "membership": 2,
+      "description": "Technology support and computer services for local businesses."
+    },
+
+    {
+      "name": "Bridge Real Estate",
+      "address": "85 McCulloch Blvd, Lake Havasu City, AZ",
+      "phone": "(928) 555-7788",
+      "website": "https://www.bridgerealestate.com",
+      "image": "bridge-real-estate.webp",
+      "membership": 3,
+      "description": "Helping families and businesses find properties in Lake Havasu."
+    },
+
+    {
+      "name": "Lake Dental Care",
+      "address": "400 Smoketree Ave, Lake Havasu City, AZ",
+      "phone": "(928) 555-9911",
+      "website": "https://www.lakedentalcare.com",
+      "image": "lake-dental.webp",
+      "membership": 1,
+      "description": "Family dental services and preventative care."
+    },
+
+    {
+      "name": "Havasu Printing Center",
+      "address": "670 Lake Havasu Ave, Lake Havasu City, AZ",
+      "phone": "(928) 555-8822",
+      "website": "https://www.havasuprinting.com",
+      "image": "havasu-printing.webp",
+      "membership": 2,
+      "description": "Custom printing, signs, banners, and business materials."
+    },
+
+    {
+      "name": "Sunset Fitness",
+      "address": "1200 Acoma Blvd, Lake Havasu City, AZ",
+      "phone": "(928) 555-3000",
+      "website": "https://www.sunsetfitness.com",
+      "image": "sunset-fitness.webp",
+      "membership": 1,
+      "description": "Fitness center with personal training and wellness programs."
+    },
+
+    {
+      "name": "River Auto Repair",
+      "address": "910 Industrial Blvd, Lake Havasu City, AZ",
+      "phone": "(928) 555-4111",
+      "website": "https://www.riverautorepair.com",
+      "image": "river-auto.webp",
+      "membership": 2,
+      "description": "Auto repair and maintenance services for the community."
+    }
+  ]
+}

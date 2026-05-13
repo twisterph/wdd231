@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Business directory for the Lake Havasu City Chamber of Commerce.">
+  <meta name="author" content="Pablo Hinojosa">
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="Lake Havasu City Chamber of Commerce">
+  <meta property="og:description" content="Find local businesses and community resources in Lake Havasu City.">
+  <meta property="og:image" content="https://twisterph.github.io/wdd231/chamber/images/social-preview.webp">
+  <meta property="og:url" content="https://twisterph.github.io/wdd231/chamber/directory.html">
+
+  <title>Business Directory | Lake Havasu Chamber</title>
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <div class="logo">★</div>
+    <span>Lake Havasu Chamber</span>
+  </div>
+  <button id="menuButton" aria-label="Menu"></button>
+  <nav id="navigation">
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html" class="active">Directory</a>
+    <a href="join.html">Join</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Business Directory</h1>
+  <div class="view-buttons">
+    <button id="gridButton">Grid</button>
+    <button id="listButton">List</button>
+  </div>
+  <section id="members" class="grid"></section>
+</main>
+
+<footer>
+  <div>
+    <h2>Lake Havasu Chamber</h2>
+    <p>123 Lake Havasu Ave</p>
+    <p>Lake Havasu City, Arizona</p>
+    <p>(928) 555-2300</p>
+    <p>info@lakehavasuchamber.org</p>
+  </div>
+
+  <div>
+    <p>WDD 231 Chamber Project</p>
+    <p>Pablo Hinojosa</p>
+    <p>&copy; <span id="currentyear"></span> Lake Havasu Chamber</p>
+    <p id="lastModified"></p>
+  </div>
+</footer>
+</body>
+</html>
