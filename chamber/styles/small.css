@@ -10,7 +10,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -52,6 +51,7 @@ header {
 #menuButton::before {
   content: "☰";
 }
+
 nav {
   display: none;
   flex-direction: column;
@@ -107,13 +107,13 @@ h1 {
   background-color: #b96d1f;
 }
 
+/* GRID VIEW */
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
-
 
 .card {
   background-color: var(--card-background);
@@ -172,21 +172,17 @@ h1 {
 }
 
 .list .card {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 1rem;
-  align-items: center;
+  display: block;
   text-align: left;
 }
 
 .list .card img {
-  width: 120px;
-  height: 90px;
-  margin: 0;
+  display: none;
 }
 
 .list .card h2 {
   min-height: auto;
+  margin-bottom: 0.5rem;
 }
 
 footer {

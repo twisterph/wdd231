@@ -9,22 +9,18 @@
   #menuButton {
     display: none;
   }
-
   nav {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
   }
-
   nav a {
     padding: 0;
   }
 
-
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
-
 
   footer {
     display: flex;
