@@ -4,23 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- SEO -->
   <meta name="description" content="Business directory for the Lake Havasu City Chamber of Commerce.">
   <meta name="author" content="Pablo Hinojosa">
 
-  <!-- Facebook Open Graph -->
+  <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Lake Havasu City Chamber of Commerce">
   <meta property="og:description" content="Find local businesses and community resources in Lake Havasu City.">
   <meta property="og:image" content="https://twisterph.github.io/wdd231/chamber/images/social-preview.webp">
   <meta property="og:url" content="https://twisterph.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
 
-  <title>Business Directory | Lake Havasu Chamber</title>
+  <title>Business Directory | Lake Havasu Chamber 2026</title>
 
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
+  <!-- JavaScript -->
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/directory.js" defer></script>
 </head>
@@ -32,7 +43,9 @@
     <div class="logo">★</div>
     <span>Lake Havasu Chamber</span>
   </div>
-  <button id="menuButton" aria-label="Menu"></button>
+
+  <button id="menuButton" aria-label="Open navigation menu"></button>
+
   <nav id="navigation">
     <a href="index.html">Home</a>
     <a href="discover.html">Discover</a>
@@ -43,10 +56,12 @@
 
 <main>
   <h1>Business Directory</h1>
+
   <div class="view-buttons">
-    <button id="gridButton">Grid</button>
-    <button id="listButton">List</button>
+    <button id="gridButton">Grid View</button>
+    <button id="listButton">List View</button>
   </div>
+
   <section id="members" class="grid"></section>
 </main>
 
@@ -66,5 +81,6 @@
     <p id="lastModified"></p>
   </div>
 </footer>
+
 </body>
 </html>

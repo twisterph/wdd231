@@ -1,6 +1,6 @@
 :root {
   --primary-color: #003366;
-  --secondary-color: #d9822b;
+  --secondary-color: #b35f14;
   --background-color: #f7f3ec;
   --text-color: #222222;
   --card-background: #ffffff;
@@ -10,9 +10,10 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -37,7 +38,10 @@ header {
   display: grid;
   place-items: center;
   font-size: 1.5rem;
-  color: white;
+
+
+  color: #ffffff;
+  font-weight: bold;
 }
 
 #menuButton {
@@ -69,15 +73,21 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--secondary-color);
+  color: #ffd9b3;
 }
 
 .active {
-  color: var(--secondary-color);
+  color: #ffcc99;
+  font-weight: bold;
 }
 
 main {
   padding: 1rem;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
 }
 
 h1 {
@@ -104,10 +114,8 @@ h1 {
 }
 
 .view-buttons button:hover {
-  background-color: #b96d1f;
+  background-color: #944b0d;
 }
-
-/* GRID VIEW */
 
 .grid {
   display: grid;
