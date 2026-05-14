@@ -13,12 +13,18 @@
   nav {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  nav a {
+    padding: 0;
   }
+
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
 
   footer {
     display: flex;
