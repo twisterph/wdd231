@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+h1 {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
+  margin: 0;
+}
+
+main {
+  background-color: white;
+  width: 300px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100px;
+  height: auto;
+}
+
+figcaption {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+}
