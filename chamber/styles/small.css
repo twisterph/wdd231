@@ -1,3 +1,4 @@
+
 :root {
   --primary-color: #003366;
   --secondary-color: #b35f14;
@@ -9,6 +10,11 @@
 
 * {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -38,8 +44,6 @@ header {
   display: grid;
   place-items: center;
   font-size: 1.5rem;
-
-
   color: #ffffff;
   font-weight: bold;
 }
@@ -96,6 +100,7 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+
 .view-buttons {
   display: flex;
   justify-content: center;
@@ -122,7 +127,6 @@ h1 {
   grid-template-columns: 1fr;
   gap: 1.5rem;
 }
-
 .card {
   background-color: var(--card-background);
   border: 1px solid var(--border-color);
@@ -134,14 +138,13 @@ h1 {
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
 }
 
 .card img {
   width: 100%;
   max-width: 220px;
   height: 140px;
-
   object-fit: contain;
 
   display: block;
@@ -193,36 +196,14 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-footer {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1.5rem 1rem;
-  margin-top: 2rem;
-  text-align: center;
-}
-
-footer h2 {
-  margin-top: 0;
-}
-
-footer p {
-  margin: 0.3rem 0;
-}
-
-
-
-
-/* HOME PAGE */
-
 .hero {
   position: relative;
-  text-align: center;
   background-color: var(--primary-color);
 }
 
 .hero img {
   width: 100%;
-  height: 320px;
+  min-height: 320px;
   object-fit: cover;
   display: block;
 }
@@ -242,7 +223,7 @@ footer p {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.85rem 1.3rem;
-  background-color: #b35f14;
+  background-color: var(--secondary-color);
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -255,7 +236,6 @@ footer p {
 
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1rem;
   margin-top: 1.5rem;
 }
@@ -301,7 +281,6 @@ footer p {
 
 .spotlight-grid {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
@@ -324,4 +303,20 @@ footer p {
 
 .spotlight-card h3 {
   color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer h2 {
+  margin-top: 0;
+}
+
+footer p {
+  margin: 0.3rem 0;
 }
