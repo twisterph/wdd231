@@ -12,7 +12,7 @@ const forecastContainer = document.querySelector("#forecast");
 
 const latitude = 34.48;
 const longitude = -114.32;
-const apiKey = "f5a10ba1a899c2ab8521e1bbf6fff12f";
+const apiKey = "0ea0b6409ce2ed493ffe82f9e639ad4c";
 
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
