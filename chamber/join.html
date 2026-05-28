@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Join the Lake Havasu City Chamber of Commerce and choose a membership level.">
+  <meta name="author" content="Pablo Hinojosa">
+
+  <meta property="og:title" content="Join Lake Havasu Chamber">
+  <meta property="og:description" content="Apply to join the Lake Havasu City Chamber of Commerce.">
+  <meta property="og:image" content="https://twisterph.github.io/wdd231/chamber/images/social-preview.webp">
+  <meta property="og:url" content="https://twisterph.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+
+  <title>Join | Lake Havasu Chamber</title>
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">★</div>
+    <span>Lake Havasu Chamber</span>
+  </div>
+
+  <button id="menuButton" aria-label="Open navigation menu"></button>
+
+  <nav id="navigation">
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html" class="active">Join</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Join the Chamber</h1>
+
+  <div class="join-layout">
+    <form method="get" action="thankyou.html" class="join-form">
+      <label>
+        First Name
+        <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+      </label>
+
+      <label>
+        Last Name
+        <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+      </label>
+
+      <label>
+        Organizational Title
+        <input type="text" name="orgTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+      </label>
+
+      <label>
+        Mobile Phone
+        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+      </label>
+
+      <label>
+        Business / Organization Name
+        <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+      </label>
+
+      <label>
+        Membership Level
+        <select name="membership" title="Select a membership level" required>
+          <option value="">Choose a Membership</option>
+          <option value="np">NP Membership</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+
+      <label>
+        Business Description
+        <textarea name="description" title="Describe your business or organization"></textarea>
+      </label>
+
+      <input type="hidden" name="timestamp" id="timestamp">
+
+      <input type="submit" value="Join the Chamber">
+    </form>
+
+    <section class="membership-cards">
+      <h2>Membership Levels</h2>
+
+      <div class="membership-card">
+        <h3>NP Membership</h3>
+        <a href="#" data-modal="np-modal">Learn More</a>
+      </div>
+
+      <div class="membership-card">
+        <h3>Bronze Membership</h3>
+        <a href="#" data-modal="bronze-modal">Learn More</a>
+      </div>
+
+      <div class="membership-card">
+        <h3>Silver Membership</h3>
+        <a href="#" data-modal="silver-modal">Learn More</a>
+      </div>
+
+      <div class="membership-card">
+        <h3>Gold Membership</h3>
+        <a href="#" data-modal="gold-modal">Learn More</a>
+      </div>
+    </section>
+  </div>
+
+  <dialog id="np-modal">
+    <button class="close-modal">❌</button>
+    <h2>NP Membership</h2>
+    <p>No fee. Designed for nonprofit organizations.</p>
+    <p>Includes basic directory listing and access to community events.</p>
+  </dialog>
+
+  <dialog id="bronze-modal">
+    <button class="close-modal">❌</button>
+    <h2>Bronze Membership</h2>
+    <p>Includes business directory listing, networking events, and basic training opportunities.</p>
+  </dialog>
+
+  <dialog id="silver-modal">
+    <button class="close-modal">❌</button>
+    <h2>Silver Membership</h2>
+    <p>Includes Bronze benefits plus event discounts, extra advertising, and business resources.</p>
+  </dialog>
+
+  <dialog id="gold-modal">
+    <button class="close-modal">❌</button>
+    <h2>Gold Membership</h2>
+    <p>Includes all benefits plus premium advertising, spotlight opportunities, and special event promotion.</p>
+  </dialog>
+</main>
+
+<footer>
+  <div>
+    <h2>Lake Havasu Chamber</h2>
+    <p>123 Lake Havasu Ave</p>
+    <p>Lake Havasu City, Arizona</p>
+    <p>(928) 555-2300</p>
+    <p>info@lakehavasuchamber.org</p>
+  </div>
+
+  <div>
+    <p>WDD 231 Chamber Project</p>
+    <p>Pablo Hinojosa</p>
+    <p>&copy; <span id="currentyear"></span> Lake Havasu Chamber</p>
+    <p id="lastModified"></p>
+  </div>
+</footer>
+</body>
+</html>
