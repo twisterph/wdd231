@@ -20,38 +20,12 @@ body {
     color: var(--text-color);
     line-height: 1.5;
 }
-dialog {
-  border: 1px solid rgb(0 0 0 / 10%);
-  border-radius: 10px;
-  padding: 1.5rem;
-  background-color: white;
-  box-shadow: 0 0 3rem rgb(0 0 0 / 30%);
-  width: 90%;
-  max-width: 600px;
-}
 
-::backdrop {
-  background-color: rgb(0 0 0 / 50%);
-}
-
-dialog button {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  padding: 0.5rem 0.8rem;
-  border: none;
-  background-color: #003366;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-}
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1rem;
-
     background-color: var(--background-color);
 }
 
@@ -68,15 +42,10 @@ header {
 
 #menu {
     border: 1px solid var(--border-color);
-
     background-color: var(--accent-color);
-
     color: var(--text-color);
-
     padding: 0.5rem 0.8rem;
-
     font-size: 1.5rem;
-
     cursor: pointer;
 }
 
@@ -90,9 +59,7 @@ header {
 
 nav {
     display: none;
-
     flex-direction: column;
-
     background-color: var(--primary-color);
 }
 
@@ -102,22 +69,15 @@ nav.open {
 
 nav a {
     color: white;
-
     text-decoration: none;
-
     padding: 1rem;
-
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-
+    border-top: 1px solid rgb(255 255 255 / 20%);
     font-weight: 700;
-
-    transition: background-color 0.3s ease,
-                color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav a:hover {
     background-color: var(--secondary-color);
-    color: white;
 }
 
 nav a.active {
@@ -127,9 +87,7 @@ nav a.active {
 
 main {
     max-width: 1200px;
-
     margin: 0 auto;
-
     padding: 1rem;
 }
 
@@ -144,17 +102,13 @@ h1 {
 
 section {
     border: 1px solid var(--border-color);
-
     background-color: #f3f4f6;
 }
 
 section h2 {
     background-color: var(--primary-color);
-
     color: white;
-
     text-align: center;
-
     padding: 0.75rem;
 }
 
@@ -169,35 +123,24 @@ section p {
 .photo img {
     width: 100%;
     max-width: 300px;
-
     height: auto;
-
     padding: 1rem;
 }
 
 .buttons {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 0.5rem;
-
     padding: 1rem;
 }
 
 .buttons button {
     padding: 0.75rem;
-
     border: none;
-
     background-color: var(--primary-color);
-
     color: white;
-
     font-weight: 700;
-
     cursor: pointer;
-
     transition: background-color 0.3s ease;
 }
 
@@ -207,22 +150,21 @@ section p {
 
 #courses {
     display: grid;
-
     gap: 0.75rem;
-
     padding: 1rem;
 }
 
 .course-card {
     padding: 1rem;
-
     text-align: center;
-
     background-color: white;
-
     border: 1px solid var(--border-color);
-
     font-weight: 700;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    background-color: var(--accent-color);
 }
 
 .completed {
@@ -231,31 +173,56 @@ section p {
 
 #credits {
     text-align: center;
-
     font-weight: 700;
-
     padding-bottom: 1rem;
 }
 
 footer {
     background-color: var(--accent-color);
-
     text-align: center;
-
     padding: 1rem;
 }
 
 .social {
     display: flex;
-
     justify-content: center;
-
     gap: 1rem;
-
     margin-bottom: 1rem;
 }
 
 .social img {
     width: 40px;
     height: 40px;
+}
+
+/* MODAL */
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 0 3rem rgb(0 0 0 / 30%);
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: var(--secondary-color);
 }

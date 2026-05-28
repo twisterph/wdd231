@@ -48,9 +48,11 @@ const credits = document.querySelector("#credits");
 const courseDetails = document.querySelector("#course-details");
 
 function displayCourses(courseList) {
+
     coursesContainer.innerHTML = "";
 
     courseList.forEach(course => {
+
         const card = document.createElement("div");
 
         card.classList.add("course-card");
@@ -79,6 +81,7 @@ function displayCourses(courseList) {
 }
 
 function displayCourseDetails(course) {
+
     courseDetails.innerHTML = `
         <button id="closeModal">❌</button>
 
@@ -104,6 +107,7 @@ function displayCourseDetails(course) {
     });
 
     courseDetails.addEventListener("click", (event) => {
+
         const dialogDimensions = courseDetails.getBoundingClientRect();
 
         if (
@@ -122,6 +126,7 @@ document.querySelector("#all").addEventListener("click", () => {
 });
 
 document.querySelector("#cse").addEventListener("click", () => {
+
     const cseCourses = courses.filter(course =>
         course.subject === "CSE"
     );
@@ -130,6 +135,7 @@ document.querySelector("#cse").addEventListener("click", () => {
 });
 
 document.querySelector("#wdd").addEventListener("click", () => {
+
     const wddCourses = courses.filter(course =>
         course.subject === "WDD"
     );
