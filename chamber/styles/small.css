@@ -320,3 +320,118 @@ footer h2 {
 footer p {
   margin: 0.3rem 0;
 }
+
+/* JOIN PAGE wed 27th 2026*/
+.join-layout {
+  display: grid;
+  gap: 2rem;
+}
+
+.join-form {
+  display: grid;
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.join-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: bold;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.join-form textarea {
+  min-height: 120px;
+}
+
+.join-form input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.membership-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.membership-cards h2 {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.membership-card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.membership-card a {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 0 3rem rgb(0 0 0 / 40%);
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+.close-modal {
+  float: right;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.thankyou-card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#form-results p {
+  background-color: var(--background-color);
+  padding: 0.75rem;
+  border-left: 5px solid var(--primary-color);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

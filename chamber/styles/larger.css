@@ -50,4 +50,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  .join-layout {
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+  }
 }
