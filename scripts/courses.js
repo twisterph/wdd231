@@ -42,14 +42,15 @@ const courses = [
         completed: false
     }
 ];
+
 const coursesContainer = document.querySelector("#courses");
 const credits = document.querySelector("#credits");
-function displayCourses(courseList) {
+const courseDetails = document.querySelector("#course-details");
 
+function displayCourses(courseList) {
     coursesContainer.innerHTML = "";
 
     courseList.forEach(course => {
-
         const card = document.createElement("div");
 
         card.classList.add("course-card");
@@ -62,6 +63,10 @@ function displayCourses(courseList) {
             <p>${course.subject} ${course.number}</p>
         `;
 
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
         coursesContainer.appendChild(card);
     });
 
@@ -72,11 +77,51 @@ function displayCourses(courseList) {
     credits.textContent =
         `The total credits for course listed above is ${totalCredits}`;
 }
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+
+        <h2>${course.subject} ${course.number}</h2>
+
+        <h3>${course.title}</h3>
+
+        <p><strong>Credits</strong>: ${course.credits}</p>
+
+        <p><strong>Completed</strong>: ${course.completed ? "Yes" : "No"}</p>
+
+        <p>
+            This course helps students build programming and web development skills.
+        </p>
+    `;
+
+    courseDetails.showModal();
+
+    const closeModal = document.querySelector("#closeModal");
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+    courseDetails.addEventListener("click", (event) => {
+        const dialogDimensions = courseDetails.getBoundingClientRect();
+
+        if (
+            event.clientX < dialogDimensions.left ||
+            event.clientX > dialogDimensions.right ||
+            event.clientY < dialogDimensions.top ||
+            event.clientY > dialogDimensions.bottom
+        ) {
+            courseDetails.close();
+        }
+    });
+}
+
 document.querySelector("#all").addEventListener("click", () => {
     displayCourses(courses);
 });
-document.querySelector("#cse").addEventListener("click", () => {
 
+document.querySelector("#cse").addEventListener("click", () => {
     const cseCourses = courses.filter(course =>
         course.subject === "CSE"
     );
@@ -85,7 +130,6 @@ document.querySelector("#cse").addEventListener("click", () => {
 });
 
 document.querySelector("#wdd").addEventListener("click", () => {
-
     const wddCourses = courses.filter(course =>
         course.subject === "WDD"
     );
