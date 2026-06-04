@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Pablo Hinojosa">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <title>CourtFinder | Community and Court Tips</title>
+  <meta name="description" content="Basketball community tips, court etiquette, and a form to recommend your favorite basketball court.">
+  <meta property="og:title" content="CourtFinder Community">
+  <meta property="og:description" content="Read basketball court tips and recommend a court to the community.">
+  <meta property="og:image" content="images/social-preview.webp">
+  <meta property="og:url" content="https://example.com/finalproject/community.html">
+</head>
+<body>
+
+  <header>
+    <div class="site-brand">
+      <a href="index.html" class="brand-link" aria-label="CourtFinder home">
+        <img src="images/logo.svg" alt="CourtFinder logo" width="54" height="54">
+        <span>CourtFinder</span>
+      </a>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    </div>
+    <nav id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="courts.html">Courts</a>
+      <a href="community.html">Community</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">Community</p>
+      <h1>Play Better. Respect the Court.</h1>
+      <p>Good basketball culture starts with respect, communication, and knowing how to join a run.</p>
+    </section>
+
+    <section class="tips-grid">
+      <article>
+        <h2>Pickup Game Etiquette</h2>
+        <p>Call next clearly, respect winners, avoid arguing every foul, and keep the game moving.</p>
+      </article>
+      <article>
+        <h2>Best Time to Play</h2>
+        <p>Outdoor courts are usually better early morning or evening, especially in hot cities.</p>
+      </article>
+      <article>
+        <h2>Safety First</h2>
+        <p>Bring water, warm up before playing, and check the court surface before sprinting or jumping.</p>
+      </article>
+    </section>
+
+    <section class="favorites-panel">
+      <h2>Your Saved Courts</h2>
+      <p>These courts are saved with local storage from the courts page.</p>
+      <ul id="favorite-list"></ul>
+    </section>
+
+    <section id="recommend" class="form-section">
+      <h2>Recommend a Court</h2>
+      <form action="form.html" method="get">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="court">Court Name</label>
+        <input id="court" name="court" type="text" required>
+
+        <label for="type">Court Type</label>
+        <select id="type" name="type" required>
+          <option value="">Select one</option>
+          <option>Indoor</option>
+          <option>Outdoor</option>
+        </select>
+
+        <label for="message">Why do you recommend this court?</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="button primary" type="submit">Submit Court</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> CourtFinder | Pablo Hinojosa</p>
+    <p>
+      <a href="attributions.html">Attributions</a> |
+      <a href="https://www.loom.com/" target="_blank" rel="noopener">Video Demo</a>
+    </p>
+    <p id="last-modified"></p>
+  </footer>
+
+  <script type="module" src="scripts/community.js"></script>
+</body>
+</html>

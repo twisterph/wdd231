@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Pablo Hinojosa">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <title>CourtFinder | Form Results</title>
+  <meta name="description" content="CourtFinder court recommendation form results page.">
+</head>
+<body>
+
+  <header>
+    <div class="site-brand">
+      <a href="index.html" class="brand-link" aria-label="CourtFinder home">
+        <img src="images/logo.svg" alt="CourtFinder logo" width="54" height="54">
+        <span>CourtFinder</span>
+      </a>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    </div>
+    <nav id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="courts.html">Courts</a>
+      <a href="community.html">Community</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">Form submitted</p>
+      <h1>Thank You for the Recommendation</h1>
+      <p>Your submitted information is shown below.</p>
+    </section>
+    <section class="results-card">
+      <h2>Submission Details</h2>
+      <dl id="form-results"></dl>
+      <a class="button primary" href="community.html">Back to Community</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> CourtFinder | Pablo Hinojosa</p>
+    <p>
+      <a href="attributions.html">Attributions</a> |
+      <a href="https://www.loom.com/" target="_blank" rel="noopener">Video Demo</a>
+    </p>
+    <p id="last-modified"></p>
+  </footer>
+
+  <script type="module" src="scripts/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Pablo Hinojosa">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <title>CourtFinder | Basketball Court Discovery</title>
+  <meta name="description" content="CourtFinder helps basketball players discover outdoor and indoor courts with ratings, skill levels, lighting, and local court details.">
+  <meta property="og:title" content="CourtFinder Basketball Court Discovery">
+  <meta property="og:description" content="Find your next basketball court, save favorites, and explore local pickup spots.">
+  <meta property="og:image" content="images/social-preview.webp">
+  <meta property="og:url" content="https://example.com/finalproject/index.html">
+</head>
+<body>
+
+  <header>
+    <div class="site-brand">
+      <a href="index.html" class="brand-link" aria-label="CourtFinder home">
+        <img src="images/logo.svg" alt="CourtFinder logo" width="54" height="54">
+        <span>CourtFinder</span>
+      </a>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    </div>
+    <nav id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="courts.html">Courts</a>
+      <a href="community.html">Community</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Basketball court discovery</p>
+        <h1>Find your next run.</h1>
+        <p>CourtFinder helps players discover courts, compare court conditions, and save favorite places to hoop.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="courts.html">Explore Courts</a>
+          <a class="button secondary" href="community.html">Player Tips</a>
+        </div>
+      </div>
+      <img src="images/hero-court.webp" alt="Stylized basketball court with lights" width="900" height="560">
+    </section>
+
+    <section class="intro-grid">
+      <article>
+        <h2>Built for pickup players</h2>
+        <p>Search courts by type, skill level, lighting, and best time to play. The goal is to make it easier to choose the right court before you leave home.</p>
+      </article>
+      <article>
+        <h2>Save favorites</h2>
+        <p>Use the favorite button to save courts in your browser with local storage, so your favorite spots stay available after refresh.</p>
+      </article>
+      <article>
+        <h2>Explore details</h2>
+        <p>Each court card opens a detailed modal with surface, parking, lighting, and a short description of the court environment.</p>
+      </article>
+    </section>
+
+    <section class="featured-section">
+      <div>
+        <p class="eyebrow">Featured court</p>
+        <h2 id="featured-title">Loading featured court...</h2>
+        <p id="featured-description">Court details will appear here.</p>
+        <a class="button primary" href="courts.html">See All Courts</a>
+      </div>
+      <div class="stat-card">
+        <strong id="court-count">15+</strong>
+        <span>courts loaded from JSON</span>
+      </div>
+    </section>
+
+    <section class="cta-panel">
+      <h2>Know a great court?</h2>
+      <p>Share a court recommendation with the community.</p>
+      <a class="button primary" href="community.html#recommend">Recommend a Court</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> CourtFinder | Pablo Hinojosa</p>
+    <p>
+      <a href="attributions.html">Attributions</a> |
+      <a href="https://www.loom.com/" target="_blank" rel="noopener">Video Demo</a>
+    </p>
+    <p id="last-modified"></p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

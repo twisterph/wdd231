@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Pablo Hinojosa">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <title>CourtFinder | Explore Basketball Courts</title>
+  <meta name="description" content="Explore basketball courts with filters, court cards, modal details, and favorite court saving.">
+  <meta property="og:title" content="Explore Basketball Courts | CourtFinder">
+  <meta property="og:description" content="Browse indoor and outdoor basketball courts and save your favorites.">
+  <meta property="og:image" content="images/social-preview.webp">
+  <meta property="og:url" content="https://example.com/finalproject/courts.html">
+</head>
+<body>
+
+  <header>
+    <div class="site-brand">
+      <a href="index.html" class="brand-link" aria-label="CourtFinder home">
+        <img src="images/logo.svg" alt="CourtFinder logo" width="54" height="54">
+        <span>CourtFinder</span>
+      </a>
+      <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    </div>
+    <nav id="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="courts.html">Courts</a>
+      <a href="community.html">Community</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">Court directory</p>
+      <h1>Explore Basketball Courts</h1>
+      <p>Filter courts by type, skill level, or lighting. Click any card to view more details.</p>
+    </section>
+
+    <section class="controls" aria-label="Court filters">
+      <label for="search-input">Search courts</label>
+      <input id="search-input" type="search" placeholder="Search by court or city">
+      <div class="filter-buttons">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="Indoor">Indoor</button>
+        <button class="filter" data-filter="Outdoor">Outdoor</button>
+        <button class="filter" data-filter="Beginner">Beginner</button>
+        <button class="filter" data-filter="Advanced">Advanced</button>
+        <button class="filter" data-filter="lights">Night Lights</button>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-heading">Available Courts</h2>
+      <p id="results-count" class="muted"></p>
+      <div id="court-list" class="court-grid"></div>
+    </section>
+
+    <dialog id="court-dialog" aria-labelledby="dialog-title">
+      <button id="close-dialog" class="close-button" aria-label="Close court details">×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> CourtFinder | Pablo Hinojosa</p>
+    <p>
+      <a href="attributions.html">Attributions</a> |
+      <a href="https://www.loom.com/" target="_blank" rel="noopener">Video Demo</a>
+    </p>
+    <p id="last-modified"></p>
+  </footer>
+
+  <script type="module" src="scripts/courts.js"></script>
+</body>
+</html>

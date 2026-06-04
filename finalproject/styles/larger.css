@@ -1,0 +1,59 @@
+
+@media screen and (min-width: 740px) {
+  .site-brand {
+    padding: 1rem 2rem;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+
+  nav,
+  nav.open {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    gap: .5rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr 1.05fr;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .intro-grid,
+  .tips-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .featured-section {
+    grid-template-columns: 1.5fr .7fr;
+    align-items: center;
+  }
+
+  .court-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .court-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
