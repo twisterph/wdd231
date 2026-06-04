@@ -59,49 +59,8 @@
   }
 }
 
-/* DISCOVER PAGE - MEDIUM */
-
 @media screen and (min-width: 641px) and (max-width: 1024px) {
 
-  .discover-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
-    grid-template-areas:
-      "card1 card1"
-      "card2 card3"
-      "card4 card5"
-      "card6 card6"
-      "card7 card8";
-    gap: 1.5rem;
-  }
-
-  .discover-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-  }
-
-  .area-1 img,
-  .area-6 img {
-    height: 260px;
-    object-fit: cover;
-  }
-
-  .area-2 img,
-  .area-3 img,
-  .area-4 img,
-  .area-5 img,
-  .area-7 img,
-  .area-8 img {
-    height: 200px;
-    object-fit: cover;
-  }
-}
-
-/* DISCOVER PAGE - LARGE TETRIS STYLE */
-
-@media screen and (min-width: 641px) and (max-width: 1024px) {
   .discover-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -110,30 +69,54 @@
       "card4 card5"
       "card6 card7"
       "card8 card8";
+    gap: 1.5rem;
+  }
+
+  .area-1 img,
+  .area-8 img {
+    height: 300px;
+  }
+
+  .area-2 img,
+  .area-3 img,
+  .area-4 img,
+  .area-5 img,
+  .area-6 img,
+  .area-7 img {
+    height: 230px;
   }
 }
 
 @media screen and (min-width: 1025px) {
+
   .discover-grid {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
       "card1 card1 card1 card2 card2 card3"
       "card4 card4 card5 card5 card6 card6"
       "card7 card7 card8 card8 card8 card8";
-  }
-
-  .discover-card img {
-    height: 260px;
-    object-fit: cover;
+    gap: 1.5rem;
   }
 
   .area-1 img,
   .area-8 img {
-    height: 320px;
+    height: 330px;
+  }
+
+  .area-2 img,
+  .area-3 img,
+  .area-4 img,
+  .area-5 img,
+  .area-7 img {
+    height: 260px;
   }
 
   .area-6 img {
     height: 220px;
+  }
+
+  .discover-card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
 
   .discover-card img:hover {

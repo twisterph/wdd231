@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://twisterph.github.io/wdd231/chamber/discover.html">
   <meta property="og:type" content="website">
 
-  <title>Discover | Lake Havasu Chamber</title>
+  <title>Discover | Lake Havasu City Chamber of Commerce</title>
 
   <link rel="icon" href="images/favicon.ico">
 
@@ -45,18 +45,26 @@
     <a href="join.html">Join</a>
   </nav>
 </header>
-<address id="modalAddress"></address>
+
 <main>
   <h1>Discover Lake Havasu City</h1>
 
-  <section id="visit-message" class="visit-message"></section>
+  <section id="visit-message" class="visit-message" aria-label="Visit message"></section>
 
-  <section id="discover-grid" class="discover-grid"></section>
+  <section id="discover-grid" class="discover-grid" aria-label="Places to discover in Lake Havasu City"></section>
 
   <dialog id="imageModal">
     <button id="closeImageModal" aria-label="Close image modal">❌</button>
-    <img id="modalImage" src="" alt="">
+
+    <img
+      id="modalImage"
+      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+      alt="Selected attraction">
+
     <h2 id="modalTitle"></h2>
+
+    <address id="modalAddress"></address>
+
     <p id="modalDescription"></p>
   </dialog>
 </main>

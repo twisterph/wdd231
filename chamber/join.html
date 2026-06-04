@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://twisterph.github.io/wdd231/chamber/join.html">
   <meta property="og:type" content="website">
 
-  <title>Join | Lake Havasu Chamber</title>
+  <title>Join | Lake Havasu City Chamber of Commerce</title>
 
   <link rel="icon" href="images/favicon.ico">
 
@@ -50,7 +50,7 @@
   <h1>Join the Chamber Today!</h1>
 
   <div class="join-layout">
-    <form method="get" action="thankyou.html" class="join-form">
+    <form method="get" action="thankyou.html" class="join-form" aria-label="Chamber membership application form">
       <label>
         First Name
         <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
@@ -63,7 +63,12 @@
 
       <label>
         Organizational Title
-        <input type="text" name="orgTitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+        <input
+          type="text"
+          name="orgTitle"
+          title="Enter your organizational title. Use at least seven letters, spaces, or hyphens."
+          autocomplete="organization-title"
+          pattern="[A-Za-z -]{7,}">
       </label>
 
       <label>
@@ -107,47 +112,47 @@
 
       <div class="membership-card">
         <h3>NP Membership</h3>
-        <a href="#" data-modal="np-modal">Learn More</a>
+        <a href="javascript:void(0)" data-modal="np-modal">Learn More</a>
       </div>
 
       <div class="membership-card">
         <h3>Bronze Membership</h3>
-        <a href="#" data-modal="bronze-modal">Learn More</a>
+        <a href="javascript:void(0)" data-modal="bronze-modal">Learn More</a>
       </div>
 
       <div class="membership-card">
         <h3>Silver Membership</h3>
-        <a href="#" data-modal="silver-modal">Learn More</a>
+        <a href="javascript:void(0)" data-modal="silver-modal">Learn More</a>
       </div>
 
       <div class="membership-card">
         <h3>Gold Membership</h3>
-        <a href="#" data-modal="gold-modal">Learn More</a>
+        <a href="javascript:void(0)" data-modal="gold-modal">Learn More</a>
       </div>
     </section>
   </div>
 
   <dialog id="np-modal">
-    <button class="close-modal">❌</button>
+    <button class="close-modal" aria-label="Close NP membership modal">❌</button>
     <h2>NP Membership</h2>
     <p>No fee. Designed for nonprofit organizations.</p>
     <p>Includes basic directory listing and access to community events.</p>
   </dialog>
 
   <dialog id="bronze-modal">
-    <button class="close-modal">❌</button>
+    <button class="close-modal" aria-label="Close bronze membership modal">❌</button>
     <h2>Bronze Membership</h2>
     <p>Includes business directory listing, networking events, and basic training opportunities.</p>
   </dialog>
 
   <dialog id="silver-modal">
-    <button class="close-modal">❌</button>
+    <button class="close-modal" aria-label="Close silver membership modal">❌</button>
     <h2>Silver Membership</h2>
     <p>Includes Bronze benefits plus event discounts, extra advertising, and business resources.</p>
   </dialog>
 
   <dialog id="gold-modal">
-    <button class="close-modal">❌</button>
+    <button class="close-modal" aria-label="Close gold membership modal">❌</button>
     <h2>Gold Membership</h2>
     <p>Includes all benefits plus premium advertising, spotlight opportunities, and special event promotion.</p>
   </dialog>

@@ -63,7 +63,12 @@ function displayPlaces() {
 
       <p>${place.description}</p>
 
-      <button class="learn-more" type="button">Learn More</button>
+      <button
+        class="learn-more"
+        type="button"
+        aria-label="Learn more about ${place.name}">
+        Learn More
+      </button>
     `;
 
     const button = card.querySelector(".learn-more");
@@ -74,7 +79,7 @@ function displayPlaces() {
 
       modalTitle.textContent = place.name;
       modalAddress.textContent = place.address;
-      modalDescription.textContent = place.details;
+      modalDescription.textContent = place.details || place.description;
 
       imageModal.showModal();
     });

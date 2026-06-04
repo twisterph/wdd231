@@ -7,12 +7,19 @@
   <meta name="description" content="Thank you for joining the Lake Havasu City Chamber of Commerce.">
   <meta name="author" content="Pablo Hinojosa">
 
-  <title>Thank You | Lake Havasu Chamber</title>
+  <meta property="og:title" content="Thank You | Lake Havasu Chamber">
+  <meta property="og:description" content="Your Chamber membership application has been received.">
+  <meta property="og:image" content="https://twisterph.github.io/wdd231/chamber/images/social-preview.webp">
+  <meta property="og:url" content="https://twisterph.github.io/wdd231/chamber/thankyou.html">
+  <meta property="og:type" content="website">
+
+  <title>Thank You | Lake Havasu City Chamber of Commerce</title>
 
   <link rel="icon" href="images/favicon.ico">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/normalize.css">
@@ -24,6 +31,7 @@
 </head>
 
 <body>
+
 <header>
   <div class="brand">
     <div class="logo">★</div>
@@ -41,11 +49,15 @@
 </header>
 
 <main>
-  <section class="thankyou-card">
-    <h1>Thank You!</h1>
-    <p>Your application has been received.</p>
+  <section class="thankyou-card" aria-labelledby="thankyou-heading">
+    <h1 id="thankyou-heading">Thank You!</h1>
 
-    <div id="form-results"></div>
+    <p>Your application has been received successfully.</p>
+
+    <div
+      id="form-results"
+      aria-label="Submitted application information">
+    </div>
   </section>
 </main>
 
@@ -65,5 +77,6 @@
     <p id="lastModified"></p>
   </div>
 </footer>
+
 </body>
 </html>
